@@ -11,7 +11,7 @@ export function GameItem({ game }) {
             <div className="game-item__deteils">
                 <span className="game-item__title">{game.title}</span>
                 <div className="game-item__genre">
-                    {game.genres.map((genre) => <GameGenre genre={genre} />)}
+                    {game.genres.map((genre) => <GameGenre genre={genre} key={genre}/>)}
                 </div>
                 <div className="game-item__buy">
                     <GameBuy game={game} />
